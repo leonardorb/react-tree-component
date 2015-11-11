@@ -4,6 +4,8 @@
   "description": "A React component that gracefully renders a nested Folder Tree.",
   "main": "index.js",
   "scripts": {
+    "start": "parallelshell \"npm run -s watch\" \"ecstatic -p 8000 public\" ",
+    "watch": "watchify index.js -dv -t babelify -o public/bundle.js",
     "test": "standard && karma start --single-run"
   },
   "keywords": [
@@ -27,6 +29,8 @@
     "babel-preset-react": "^6.1.2",
     "babelify": "7.2.0",
     "browserify": "^12.0.1",
+    "ecstatic": "^1.2.0",
+    "parallelshell": "^2.0.0",
     "standard": "^5.3.1",
     "uglifyify": "^3.0.1",
     "watchify": "^3.6.0"

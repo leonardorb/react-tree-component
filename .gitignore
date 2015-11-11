@@ -1,4 +1,5 @@
 .nvmrc
-node_modules
 *.log
+node_modules
 dist
+public/bundle.js
