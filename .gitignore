@@ -1,0 +1,4 @@
+.nvmrc
+node_modules
+*.log
+dist
