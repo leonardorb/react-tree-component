@@ -5,5 +5,5 @@ import ReactDOM from 'react-dom'
 import FolderTree from './src/components/folder-tree'
 
 ReactDOM.render(
-  <FolderTree />, document.querySelector('#content')
+  <FolderTree url='folders.json' />, document.querySelector('#content')
 )
