@@ -39,18 +39,22 @@ export default class FolderTree extends Component {
   getTrashTree () {
     return this.getAllFoldersWithin(this.getTrashFolder().webid)
   }
-  getAllFoldersWithin (webid) {
-
+  getAllFoldersWithin (webid, tree) {
+    var tree = tree || []
+    var node = _.findWhere(this.state.data, { webid : webid })
+    tree.push(<Folder key={webid} folder={node}></Folder>)
+    var children = _.filter(this.state.data, folder => folder.parent_id === webid)
+    if (children) {
+      _.each(children, (child, key) => {
+        this.getAllFoldersWithin(child.webid, tree)
+      })
+    }
+    return tree
   }
   buildFolderTree () {
-    return (
-      <Folder key={ root.webid } folder={ root }></Folder>
-    )
-    // return this.state.data.map((folder, key) => {
-    //   return (
-    //     <Folder key={folder.webid} folder={folder}></Folder>
-    //   )
-    // })
+    var root = this.getRootFolder()
+    var folderTree = this.getAllFoldersWithin(root.webid)
+    return (folderTree)
   }
   render () {
     return <div>
