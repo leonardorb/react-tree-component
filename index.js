@@ -2,8 +2,8 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import FolderTree from './src/components/folder-tree'
+import Tree from './src/components/tree'
 
 ReactDOM.render(
-  <FolderTree url='folders.json' />, document.querySelector('#content')
+  <Tree url='folders.json' />, document.querySelector('#tree')
 )

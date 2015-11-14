@@ -1,0 +1,23 @@
+body {
+  margin-top: 20px;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+.folder i {
+  margin-right: 5px;
+}
+
+.opened {
+  display: inherit;
+}
+
+.closed {
+  display: none;
+}
