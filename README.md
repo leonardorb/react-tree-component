@@ -22,6 +22,12 @@ Check our `folders.json`, under `public`, for the raw data representation.
 
 - Leo ([github](https://github.com/leonardorb)) ([twitter](https://twitter.com/leonardorb))
 
+## How to Contribute
+- Before you open a ticket or send a pull request, `search` for previous discussions about the same feature or issue. Add to the earlier ticket if you find one.
+- Before sending a pull request for a feature or bug fix, be sure to have `tests`.
+- Use the same `coding style` as the rest of the codebase.
+- All pull requests should be made to the `master` branch.
+
 ## License
 
 **ISC License (ISC)**
