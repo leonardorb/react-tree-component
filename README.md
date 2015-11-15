@@ -2,6 +2,8 @@
 
 A component that will help you to build your next nested Tree.
 
+**This project is a work in progress.**
+
 ![](http://leo.d.pr/1hEgM+)
 
 ## How to use
