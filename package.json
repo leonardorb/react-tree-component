@@ -14,7 +14,7 @@
     "tree"
   ],
   "author": "Leonardo R. Barbosa <rb.leonardo@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/leonardorb/react-tree-component"

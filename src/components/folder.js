@@ -13,7 +13,7 @@ export default class Folder extends Component {
     return (
       <div className="folder">
         <i className={this.generateIcon()}></i>
-        <a href={this.generateLink()} data-id={this.props.folder.webid} onClick={this.props.onFolderClick}>
+        <a href={this.generateLink()} data-id={this.props.folder.webid} onClick={this.props.onFolderClick} onContextMenu={this.props.onFolderRightClick}>
           {this.props.folder.name}
         </a>
       </div>
